@@ -1,4 +1,5 @@
 import './App.css';
+import Projects from './components/Projects';
 
 function App() {
     return (
@@ -26,6 +27,8 @@ function App() {
                     C38.409,16.43,36.368,14.388,33.85,14.388z"/>
                 </defs>
             </svg>
+
+            <Projects />
         </div>
     );
 }
