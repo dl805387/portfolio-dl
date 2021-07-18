@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import '../styles/Projects.css'
 import mykdrama_home from '../pictures/mykdrama_home.png'
 import mykdrama_detail from '../pictures/mykdrama_detail.png'
@@ -10,7 +10,7 @@ import journal_workouts from '../pictures/journal_workouts.png'
 import encryptor_encrypt from '../pictures/encryptor_encrypt.png'
 import encryptor_decrypt from '../pictures/encryptor_decrypt.png'
 
-function Projects(props) {
+function Projects() {
 
     return (
         <div>

@@ -1,9 +1,10 @@
 import './App.css';
 import Projects from './components/Projects';
+import About from './components/About';
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <div id="Clouds">
                 <div class="Cloud Foreground"></div>
                 <div class="Cloud Background"></div>
@@ -28,7 +29,8 @@ function App() {
                 </defs>
             </svg>
 
-            <Projects />
+            <About/>
+            <Projects/>
         </div>
     );
 }
