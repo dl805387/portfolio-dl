@@ -1,9 +1,53 @@
 .carousel {
-    width:640px;
-    height:360px;
+    width: 50% !important; 
+}
+
+.carousal2048 {
+    width: 40% !important;
+}
+
+.carousalJournal {
+    width: 45% !important;
+}
+
+.carousalEncryptor {
+    width: 35% !important;
 }
 
 /*
-carousal width 640 height 360 is good proportion
-you can do math to change size but keep proportion
+on mobile screen, make the carousal stack on top of description
+
+maybe make description responsible too
 */
+
+/*
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='coral' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='coral' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+*/
+
+/*
+.carousel .carousel-indicators li {
+    background-color: coral !important;
+}
+
+.carousel .carousel-indicators li.active {
+    background-color: coral !important;
+}
+*/
+
+.carousel-control-prev {
+    margin-left: -75px;
+}
+  
+.carousel-control-next {
+    margin-right: -75px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
