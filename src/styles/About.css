@@ -1,6 +1,6 @@
 .me {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     float: left;
     margin-right: 20px;
@@ -8,11 +8,7 @@
 
 .about {
     display: flex;
-    margin-left: 30%;
-    /*
-    margin-top: 20vh;
-    background-color: rgb(69, 55, 129);
-    */
+    margin: auto;
     margin-top: 20vh;
     width: 50%;
     min-height: 80vh;

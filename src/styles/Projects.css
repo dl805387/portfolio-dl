@@ -83,9 +83,18 @@ background-color: coral !important;
     margin: auto;
     margin-top: 4%;
     margin-bottom: 4%;
+    width: 60%;
+}
+
+.project1 {
+    display: flex;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
     width: 80%;
 }
 
 .projDesc {
     width: 50%;
+    margin-left: 2%;
 }
