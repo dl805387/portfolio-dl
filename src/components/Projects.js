@@ -9,6 +9,8 @@ import journal_login from '../pictures/journal_login.png'
 import journal_workouts from '../pictures/journal_workouts.png'
 import encryptor_encrypt from '../pictures/encryptor_encrypt.png'
 import encryptor_decrypt from '../pictures/encryptor_decrypt.png'
+import './Icons.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Projects() {
 
@@ -17,7 +19,7 @@ function Projects() {
             <h1 className="projectTitle">Projects</h1>
 
             <div className="project1">
-                <div id="carouselExampleIndicators1" class="carousel slide carouselDrama" data-ride="carousel">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
@@ -54,11 +56,12 @@ function Projects() {
                         <li>Each K-drama can be viewed to obtain more detailed information such as the synopsis and a list of recommended K-dramas</li>
                         <li>User account and K-dramas are stored in a MySQL database</li>
                     </ul>
+                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" />
                 </div>
             </div>
 
             <div className="project">
-                <div id="carouselExampleIndicators2" class="carousel slide carousel2048" data-ride="carousel">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
@@ -92,7 +95,7 @@ function Projects() {
             </div>
 
             <div className="project">
-                <div id="carouselExampleIndicators4" class="carousel slide carouselEncryptor" data-ride="carousel">
+                <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
@@ -128,7 +131,7 @@ function Projects() {
             </div>
 
             <div className="project">
-                <div id="carouselExampleIndicators3" class="carousel slide carouselJournal" data-ride="carousel">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
