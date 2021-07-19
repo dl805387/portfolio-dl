@@ -1,18 +1,20 @@
-.carousel {
+/*
+.carouselDrama {
     width: 50% !important; 
 }
 
-.carousal2048 {
+.carousel2048 {
     width: 40% !important;
 }
 
-.carousalJournal {
+.carouselJournal {
     width: 45% !important;
 }
 
-.carousalEncryptor {
-    width: 35% !important;
+.carouselEncryptor {
+    width: 50% !important;
 }
+*/
 
 /*
 on mobile screen, make the carousal stack on top of description
@@ -40,14 +42,50 @@ maybe make description responsible too
 }
 */
 
-.carousel-control-prev {
-    margin-left: -75px;
+
+
+/*
+on a large screen carousel margin pixel might not work
+
+.carousel-indicators {
+    bottom: -50px;
 }
-  
-.carousel-control-next {
-    margin-right: -75px;
+background-color: coral !important;
+*/
+
+.carousel-indicators li {
+    height: 1.2em !important;
+    width: 1.2em !important;
+    border-radius: 50% !important;
 }
 
 .carousel-indicators {
     bottom: -50px;
+}
+
+.carousel {
+    width: 50% !important;
+}
+
+.projectTitle {
+    text-align: center;
+    font-size: 2.6em;
+    margin-top: -2.2em;
+    text-decoration: underline;
+}
+
+.projectSubtitle {
+    font-size: 2em;
+}
+
+.project {
+    display: flex;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 80%;
+}
+
+.projDesc {
+    width: 50%;
 }

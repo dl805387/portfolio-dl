@@ -7,14 +7,19 @@
 }
 
 .about {
+    display: flex;
     margin-left: 30%;
+    /*
+    margin-top: 20vh;
+    background-color: rgb(69, 55, 129);
+    */
     margin-top: 20vh;
     width: 50%;
-    display: flex;
+    min-height: 80vh;
 }
 
 .about p {
     color: rgb(75, 75, 75);
-    font-size: 18px;
+    font-size: 1.2em;
     z-index: 9;
 }
