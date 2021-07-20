@@ -1,8 +1,13 @@
-.square {
-    width: 200px;
-    height: 200px;
-    background:turquoise
-  }
+.skillsList {
+    display:flex;
+    justify-content: space-around;
+}
+
+.skillName {
+    text-align: center;
+    font-size: 1em;
+}
+
 
 @keyframes wipe-enter {
 	0% {

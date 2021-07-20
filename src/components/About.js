@@ -16,7 +16,7 @@ function About() {
                     World War required a rapid expansion of the officer corps and more than 200,000 additional officers were 
                 </p>
             </div>
-            <a href="#projectTitle"><FontAwesomeIcon icon="angle-double-down" size="2x" className="icon downArrow"/></a>
+            <a href="#skillsSection"><FontAwesomeIcon icon="angle-double-down" size="2x" className="icon downArrow"/></a>
         </div>
     );
 }
