@@ -18,8 +18,8 @@ function Projects() {
         <div className="projectSection">
             <h1 className="projectTitle">Projects</h1>
 
-            <div className="project1">
-                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <div className="project">
+                <div id="carouselExampleIndicators1" class="carousel slide c1" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
@@ -27,13 +27,13 @@ function Projects() {
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100 ww" src={mykdrama_home} alt="First slide"></img>
+                            <img class="d-block w-100 ww ci1" src={mykdrama_home} alt="First slide"></img>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 ww" src={mykdrama_detail} alt="Second slide"></img>
+                            <img class="d-block w-100 ww ci1" src={mykdrama_detail} alt="Second slide"></img>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 ww" src={mykdrama_list} alt="Third slide"></img>
+                            <img class="d-block w-100 ww ci1" src={mykdrama_list} alt="Third slide"></img>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -56,22 +56,23 @@ function Projects() {
                         <li>Each K-drama can be viewed to obtain more detailed information such as the synopsis and a list of recommended K-dramas</li>
                         <li>User account and K-dramas are stored in a MySQL database</li>
                     </ul>
-                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" />
+                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
+                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
                 </div>
             </div>
 
             <div className="project">
-                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators2" class="carousel slide c2" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src={play_2048} alt="First slide"></img>
+                            <img class="d-block w-100 ci2" src={play_2048} alt="First slide"></img>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src={gameover_2048} alt="Second slide"></img>
+                            <img class="d-block w-100 ci2" src={gameover_2048} alt="Second slide"></img>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -90,22 +91,24 @@ function Projects() {
                     <ul>
                         <li>This is a clone of the 2048 game</li>
                         <li>Users must use arrow keys to move the tiles. Two tiles with the same number will merge into one. Every move will generate a random tile on the board. The goal is to make a tile with sum of 2048.</li>
-                    </ul> 
+                    </ul>
+                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
+                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
                 </div>
             </div>
 
             <div className="project">
-                <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators4" class="carousel slide c3" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src={encryptor_encrypt} alt="First slide"></img>
+                            <img class="d-block w-100 ci3" src={encryptor_encrypt} alt="First slide"></img>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src={encryptor_decrypt} alt="Second slide"></img>
+                            <img class="d-block w-100 ci3" src={encryptor_decrypt} alt="Second slide"></img>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
@@ -126,22 +129,24 @@ function Projects() {
                         <li>Encryption is done using a combination of UTF-8 character encoding and caesar cipher</li>
                         <li>Pandas is used to read the encryption key csv file and UTF-8 character-byte mapping</li>
                         <li>GUI is built using the Tkinter library</li>
-                    </ul>  
+                    </ul>
+                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
+                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
                 </div>
             </div>
 
             <div className="project">
-                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators3" class="carousel slide c4" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src={journal_login} alt="First slide"></img>
+                            <img class="d-block w-100 ci4" src={journal_login} alt="First slide"></img>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src={journal_workouts} alt="Second slide"></img>
+                            <img class="d-block w-100 ci4" src={journal_workouts} alt="Second slide"></img>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -161,7 +166,9 @@ function Projects() {
                         <li>Full stack CRUD web app that allows users to log their workouts to keep track of exercise progression</li>
                         <li>Keeps a log of past workouts, where users can update and delete each workout.</li>
                         <li>Workouts are stored in a MySQL database</li>
-                    </ul>  
+                    </ul>
+                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
+                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
                 </div>
             </div>
         </div>
