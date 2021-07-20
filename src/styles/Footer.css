@@ -1,0 +1,21 @@
+.footer {
+    background-color: rgb(80, 77, 77);
+}
+
+.iconWhite {
+    color: white;
+    font-size: 4em;
+    margin: 20px
+}
+
+.inner {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.file {
+    font-size: 3.6em;
+    margin-top: 23px;
+}

@@ -1,6 +1,7 @@
 import './App.css';
-import Projects from './components/Projects';
 import About from './components/About';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
 
             <About/>
             <Projects/>
+            <Footer/>
         </div>
     );
 }

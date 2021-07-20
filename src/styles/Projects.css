@@ -81,8 +81,7 @@
 .project {
     display: flex;
     margin: auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    padding-bottom: 50px;
     width: 80%;
 }
 
