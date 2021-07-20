@@ -16,7 +16,7 @@ function Projects() {
 
     return (
         <div className="projectSection">
-            <h1 className="projectTitle">Projects</h1>
+            <h1 className="projectTitle" id="projectTitle">Projects</h1>
 
             <div className="project">
                 <div id="carouselExampleIndicators1" class="carousel slide c1" data-ride="carousel">
@@ -56,8 +56,8 @@ function Projects() {
                         <li>Each K-drama can be viewed to obtain more detailed information such as the synopsis and a list of recommended K-dramas</li>
                         <li>User account and K-dramas are stored in a MySQL database</li>
                     </ul>
-                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
-                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
+                    <a href="https://github.com/dl805387/myKdrama" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                    <a href="https://mykdrama.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
                 </div>
             </div>
 
@@ -92,8 +92,8 @@ function Projects() {
                         <li>This is a clone of the 2048 game</li>
                         <li>Users must use arrow keys to move the tiles. Two tiles with the same number will merge into one. Every move will generate a random tile on the board. The goal is to make a tile with sum of 2048.</li>
                     </ul>
-                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
-                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
+                    <a href="https://github.com/dl805387/2048" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                    <a href="https://2048-dl.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
                 </div>
             </div>
 
@@ -130,8 +130,7 @@ function Projects() {
                         <li>Pandas is used to read the encryption key csv file and UTF-8 character-byte mapping</li>
                         <li>GUI is built using the Tkinter library</li>
                     </ul>
-                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
-                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
+                    <a href="https://github.com/dl805387/encryptor" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
                 </div>
             </div>
 
@@ -167,8 +166,8 @@ function Projects() {
                         <li>Keeps a log of past workouts, where users can update and delete each workout.</li>
                         <li>Workouts are stored in a MySQL database</li>
                     </ul>
-                    <FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon" onClick={e => {e.preventDefault(); }} />
-                    <FontAwesomeIcon icon="link" size="2x" className="icon link" onClick={e => {e.preventDefault(); }} />
+                    <a href="https://github.com/dl805387/workout-journal" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                    <a href="https://workoutjournal.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
                 </div>
             </div>
         </div>
