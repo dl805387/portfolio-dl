@@ -11,12 +11,27 @@ import encryptor_encrypt from '../pictures/encryptor_encrypt.png'
 import encryptor_decrypt from '../pictures/encryptor_decrypt.png'
 import './Icons.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
 function Projects() {
+
+    const renderTooltipGit = (props) => (
+        <Tooltip id="tooltip" {...props}>
+            Github
+        </Tooltip>
+    );
+
+    const renderTooltipLink = (props) => (
+        <Tooltip id="tooltip" {...props}>
+            view website
+        </Tooltip>
+    );
 
     return (
         <div className="projectSection">
             <h1 className="projectTitle" id="projectTitle">Projects</h1>
+            
 
             <div className="project">
                 <div id="carouselExampleIndicators1" class="carousel slide c1" data-ride="carousel">
@@ -56,8 +71,26 @@ function Projects() {
                         <li>Each K-drama can be viewed to obtain more detailed information such as the synopsis and a list of recommended K-dramas</li>
                         <li>User account and K-dramas are stored in a MySQL database</li>
                     </ul>
-                    <a href="https://github.com/dl805387/myKdrama" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
-                    <a href="https://mykdrama.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
+                    <div className="iconsRow">
+                        <div className="overlayContainer">
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltipGit}
+                            >
+                                <a href="https://github.com/dl805387/myKdrama" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                            </OverlayTrigger>
+                        </div>
+                        <div className="overlayContainer">
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltipLink}
+                            >
+                                <a href="https://mykdrama.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
+                            </OverlayTrigger>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -92,8 +125,26 @@ function Projects() {
                         <li>This is a clone of the 2048 game</li>
                         <li>Users must use arrow keys to move the tiles. Two tiles with the same number will merge into one. Every move will generate a random tile on the board. The goal is to make a tile with sum of 2048.</li>
                     </ul>
-                    <a href="https://github.com/dl805387/2048" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
-                    <a href="https://2048-dl.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
+                    <div className="iconsRow">
+                        <div className="overlayContainer">
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltipGit}
+                            >
+                                <a href="https://github.com/dl805387/2048" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                            </OverlayTrigger>
+                        </div>
+                        <div className="overlayContainer">
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltipLink}
+                            >
+                                <a href="https://2048-dl.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
+                            </OverlayTrigger>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -130,7 +181,17 @@ function Projects() {
                         <li>Pandas is used to read the encryption key csv file and UTF-8 character-byte mapping</li>
                         <li>GUI is built using the Tkinter library</li>
                     </ul>
-                    <a href="https://github.com/dl805387/encryptor" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                    <div className="iconsRow">
+                        <div className="overlayContainer">
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltipGit}
+                            >
+                                <a href="https://github.com/dl805387/encryptor" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                            </OverlayTrigger>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -166,8 +227,26 @@ function Projects() {
                         <li>Keeps a log of past workouts, where users can update and delete each workout.</li>
                         <li>Workouts are stored in a MySQL database</li>
                     </ul>
-                    <a href="https://github.com/dl805387/workout-journal" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
-                    <a href="https://workoutjournal.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
+                    <div className="iconsRow">
+                        <div className="overlayContainer">
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltipGit}
+                            >
+                                <a href="https://github.com/dl805387/workout-journal" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="icon"/></a>
+                            </OverlayTrigger>
+                        </div>
+                        <div className="overlayContainer">
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltipLink}
+                            >
+                                <a href="https://workoutjournal.netlify.app" target="_blank"><FontAwesomeIcon icon="link" size="2x" className="icon link"/></a>
+                            </OverlayTrigger>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

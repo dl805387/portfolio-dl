@@ -4,11 +4,12 @@
 
 .projectTitle {
     text-align: center;
-    font-size: 2.6em;
+    font-size: 3em;
     text-decoration: underline;
     color: black;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 /*carousel 1*/
@@ -113,9 +114,35 @@
 }
 
 .link {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 ul {
     list-style-type: circle;
+}
+
+
+/*
+to do
+
+add tooltip
+maybe make the hover icon change color
+
+
+change width of .project for large screen
+make it smaller
+*/
+
+.iconsRow {
+    display: flex;
+}
+
+/*this allows the tooltip to be close*/
+.overlayContainer {
+    position: relative;
+}
+
+/*remove underline on the tooltip*/
+#tooltip *:hover {
+    text-decoration: none !important;
 }
