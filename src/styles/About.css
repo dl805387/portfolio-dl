@@ -14,21 +14,17 @@
 .aboutBody {
     display: flex;
     width: 50%;
-    /*
+    margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9;
-    */
-    padding-top: 20vh;
-    margin: auto;
 }
 
 .aboutBody p {
-    color: rgb(80, 77, 77);
+    color: white;
     font-size: 1.2em;
-    z-index: 9;
 }
 
 .downArrow {
@@ -36,20 +32,12 @@
     margin: auto;
     position: absolute;
     bottom: 10px;
+    color: white !important;
 }
-
-/*
-.about
-min-height: 80vh;
-
-
-margin-top: -2.2em;
-*/
-
 
 
 /*
 to do
 
-slide down transition
+slide down transition slower
 */

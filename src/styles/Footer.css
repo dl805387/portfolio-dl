@@ -1,14 +1,10 @@
-.footer {
-    background-color: rgb(80, 77, 77);
-}
-
 .iconWhite {
     color: white;
     font-size: 4em;
     margin: 20px
 }
 
-.inner {
+.footer {
     margin: auto;
     width: 60%;
     display: flex;

@@ -1,18 +1,11 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
+import React from "react";
+import '../styles/Skills.css'
 
-function App() {
+function Skills() {
+
     return (
-        <div>
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-
-            <div id="Clouds">
+        <div className="skillsSection">  
+        <div id="Clouds">
                 <div class="Cloud Foreground"></div>
                 <div class="Cloud Background"></div>
                 <div class="Cloud Foreground"></div>
@@ -37,13 +30,18 @@ function App() {
             </svg>
 
             <div></div>
-
-            <About/>
-            <Skills/>
-            <Projects/>
-            <Footer/>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
+            <p>yo</p>
         </div>
     );
 }
 
-export default App;
+export default Skills;
