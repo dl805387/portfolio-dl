@@ -329,16 +329,9 @@ body {
 }
 body {
     color: #fff;
-    background-color: #fd940a;
-    background-image: radial-gradient(circle, #f9a72b 0%, #fa9026 70%, #fb6c1f 100%);
+    background-color: #6324f7;
+    background-image: radial-gradient(circle, #8a5bf8 0%, #6324f7 70%, #4f1ffb 100%);
 }
-/*
-body {
-    color: #fff;
-    background-color: #fd940a;
-    background-image: radial-gradient(circle, #f9a72b 0%, #fa9026 70%, #fb6c1f 100%);
-}
-*/
 
 /*
 The cloud animation and star background css code is from codepen.io

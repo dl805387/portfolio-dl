@@ -1,6 +1,15 @@
+.sectionHeading {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .skillsList {
     display:flex;
     justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 10%;
 }
 
 .skillName {
@@ -8,6 +17,9 @@
     font-size: 1em;
 }
 
+.skillCard:hover {
+    transform: scale(1.1);
+}
 
 @keyframes wipe-enter {
 	0% {
@@ -22,4 +34,10 @@
     .square-animation {
       animation: wipe-enter 1s 1;
     }
-  }
+}
+
+
+/*
+to make mobile friendly, make the card smaller and add to new line
+you can do this by centering it and flex wrap
+*/

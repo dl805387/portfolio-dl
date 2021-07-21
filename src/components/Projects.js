@@ -30,7 +30,7 @@ function Projects() {
 
     return (
         <div className="projectSection">
-            <h1 className="projectTitle">Projects</h1>
+            <h1 className="sectionTitle">Projects</h1>
             
 
             <div className="project">
