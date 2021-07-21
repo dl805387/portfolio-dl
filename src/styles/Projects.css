@@ -230,59 +230,55 @@ make it smaller
 
 @media (max-width: 1000px) 
 {
-    .projDesc {
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-bottom: 50px;
         width: 60%;
     }
 
-    /*carousel 1*/
+    .projDesc {
+        width: 100%;
+        margin: auto;
+    }
+
     .c1 {
-        width: 414px !important;
-        height: 233px !important;
-        margin-left: auto;
-        margin-right: 20px;
+        margin: auto;
+        margin-bottom: 50px; 
     }
-    
-    .ci1 { 
-        width: 414 !important;
-        height: 233px !important;  
-    }
-    
-    /*carousel 2*/
+
     .c2 {
-        width: 372px !important;
-        height: 233px !important;
-        margin-left: auto;
-        margin-right: 20px;
+        margin: auto;
+        margin-bottom: 50px;
     }
-    
-    .ci2 { 
-        width: 372px !important;
-        height: 233px !important;  
-    }
-    
-    /*carousel 3*/
+
     .c3 {
-        width: 324px !important;
-        height: 233px !important;
-        margin-left: auto;
-        margin-right: 20px;
+        margin: auto;
+        margin-bottom: 50px;
     }
     
-    .ci3 { 
-        width: 324px !important;
-        height: 233px !important;  
-    }
-    
-    /*carousel 4*/
+
     .c4 {
-        width: 372px !important;
-        height: 233px !important;
-        margin-left: auto;
-        margin-right: 20px;
+        margin: auto;
+        margin-bottom: 50px;
     }
     
-    .ci4 { 
-        width: 372px !important;
-        height: 233px !important;  
-    }
 }
+
+@media (max-width: 800px) 
+{
+    .project {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 600px) 
+{
+    .project {
+        width: 90%;
+    }
+
+}
+
