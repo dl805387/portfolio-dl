@@ -35,7 +35,26 @@ a:visited {
     text-decoration: none;
 }
 
+
+
+
+/*tablet screen*/
+@media (max-width: 1200px) 
+{
+    .footer {
+        width: 70%;
+    }
+}
+
+
 @media (max-width: 1000px) 
+{
+    .footer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) 
 {
     .iconWhite {
         font-size: 42px;
@@ -55,6 +74,10 @@ a:visited {
 
 @media (max-width: 600px) 
 {
+    .footer {
+        width: 90%;
+    }
+
     .iconWhite {
         font-size: 40px;
         margin: 10px;
@@ -71,6 +94,28 @@ a:visited {
     }
 }
 
-/*
-mobile friendly for less than 500px
-*/
+
+
+
+/*mobile screen*/
+@media (max-width: 450px) 
+{
+    .footer {
+        margin: auto;
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: none;
+    }
+
+    .iconPlusLabel {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 400px) 
+{
+    .footer {
+        width: 80%;
+    }
+}
