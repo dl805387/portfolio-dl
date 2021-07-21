@@ -129,7 +129,7 @@ function Skills() {
 
             <div className="skillsList">
                 <div className="square-wrapper1">   
-                    <Card style={{ width: '10rem' }} className="square1 skillCard">
+                    <Card className="square1 skillCard">
                         <Card.Img variant="top" src={js_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem className="skillName">JavaScript</ListGroupItem>
@@ -138,7 +138,7 @@ function Skills() {
                 </div>
 
                 <div className="square-wrapper2">   
-                    <Card style={{ width: '10rem' }} className="square2 skillCard">
+                    <Card className="square2 skillCard">
                         <Card.Img variant="top" src={html_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">HTML</ListGroupItem>
@@ -147,7 +147,7 @@ function Skills() {
                 </div>
 
                 <div className="square-wrapper3">   
-                    <Card style={{ width: '10rem' }} className="square3 skillCard">
+                    <Card className="square3 skillCard">
                         <Card.Img variant="top" src={css_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">CSS</ListGroupItem>
@@ -156,7 +156,7 @@ function Skills() {
                 </div>
 
                 <div className="square-wrapper4">   
-                    <Card style={{ width: '10rem' }} className="square4 skillCard">
+                    <Card className="square4 skillCard">
                         <Card.Img variant="top" src={react_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">ReactJS</ListGroupItem>
@@ -165,7 +165,7 @@ function Skills() {
                 </div>
 
                 <div className="square-wrapper5">   
-                    <Card style={{ width: '10rem' }} className="square5 skillCard">
+                    <Card className="square5 skillCard">
                         <Card.Img variant="top" src={java_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">Java</ListGroupItem>
@@ -174,7 +174,7 @@ function Skills() {
                 </div>
 
                 <div className="square-wrapper6">   
-                    <Card style={{ width: '10rem' }} className="square6 skillCard">
+                    <Card className="square6 skillCard">
                         <Card.Img variant="top" src={python_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">Python</ListGroupItem>
@@ -183,7 +183,7 @@ function Skills() {
                 </div>
 
                 <div className="square-wrapper7">   
-                    <Card style={{ width: '10rem' }} className="square7 skillCard">
+                    <Card className="square7 skillCard">
                         <Card.Img variant="top" src={mysql_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">MySQL</ListGroupItem>

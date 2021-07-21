@@ -1,12 +1,12 @@
 .sectionHeading {
     text-align: center;
-    font-size: 2em;
+    font-size: 32px;
     color: white;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .skillsList {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     margin-top: 60px;
     margin-bottom: 15%;
@@ -14,7 +14,12 @@
 
 .skillName {
     text-align: center;
-    font-size: 1em;
+    font-size: 16px;
+}
+
+.skillCard {
+    margin: 10px;
+    width: 160px;
 }
 
 .skillCard:hover {
@@ -41,3 +46,38 @@
 to make mobile friendly, make the card smaller and add to new line
 you can do this by centering it and flex wrap
 */
+
+@media (max-width: 1350px) 
+{
+    .skillsList {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: none;
+        margin-top: 60px;
+        margin-bottom: 15%;
+    }
+}
+
+@media (max-width: 700px) 
+{
+    .skillCard {
+        margin: 8px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 600px) 
+{
+    .skillCard {
+        margin: 6px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    .skillCard {
+        margin: 4px;
+        width: 110px;
+    }
+}
