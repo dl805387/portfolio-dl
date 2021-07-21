@@ -14,6 +14,16 @@ import mysql_icon from "../pictures/mysql_icon.png"
 function Skills() {
 
     useEffect(() => {
+        // error handling just in case document.queryselector is undefined
+        if (!document.querySelector('.square-wrapper1') ||
+            !document.querySelector('.square-wrapper2') ||
+            !document.querySelector('.square-wrapper3') ||
+            !document.querySelector('.square-wrapper4') ||
+            !document.querySelector('.square-wrapper5') ||
+            !document.querySelector('.square-wrapper6') ||
+            !document.querySelector('.square-wrapper7')) {
+            return;
+        }
         const observer1 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square1');
