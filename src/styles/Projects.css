@@ -4,7 +4,7 @@
 
 .sectionTitle {
     text-align: center;
-    font-size: 3em;
+    font-size: 48px;
     text-decoration: underline;
     color: black;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -73,8 +73,8 @@
 }
 
 .carousel-indicators li {
-    height: 1.2em !important;
-    width: 1.2em !important;
+    height: 20px !important;
+    width: 20px !important;
     border-radius: 50% !important;
     background-color: coral !important;
 }
@@ -96,20 +96,20 @@
 }
 
 .projDesc h1 {
-    font-size: 2em;
+    font-size: 32px;
     color: black;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .projDesc p {
     color: rgb(68, 66, 66);
-    font-size: 1.1em;
+    font-size: 18px;
 }
 
 .projDesc ul {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .icon {
@@ -282,3 +282,21 @@ make it smaller
 
 }
 
+/*
+@media (max-width: 500px) 
+{
+    .project {
+        width: 90%;
+    }
+    .projDesc {
+        background-color: tomato;
+    }
+}
+*/
+
+/*
+to do
+mobile friendly for screen size 500 and less
+try to use percentages instead of fixed size to prevent micromanaging
+
+*/
