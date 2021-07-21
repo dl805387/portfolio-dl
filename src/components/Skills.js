@@ -27,6 +27,10 @@ function Skills() {
         const observer1 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square1');
+
+                if (!square.classList) {
+                    return;
+                }
           
                 if (entry.isIntersecting) {
                     square.classList.add('square-animation');
@@ -41,6 +45,10 @@ function Skills() {
         const observer2 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square2');
+
+                if (!square.classList) {
+                    return;
+                }
           
                 if (entry.isIntersecting) {
                     square.classList.add('square-animation');
@@ -55,6 +63,10 @@ function Skills() {
         const observer3 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square3');
+
+                if (!square.classList) {
+                    return;
+                }
           
                 if (entry.isIntersecting) {
                     square.classList.add('square-animation');
@@ -69,6 +81,10 @@ function Skills() {
         const observer4 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square4');
+
+                if (!square.classList) {
+                    return;
+                }
           
                 if (entry.isIntersecting) {
                     square.classList.add('square-animation');
@@ -83,6 +99,10 @@ function Skills() {
         const observer5 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square5');
+
+                if (!square.classList) {
+                    return;
+                }
           
                 if (entry.isIntersecting) {
                     square.classList.add('square-animation');
@@ -97,6 +117,10 @@ function Skills() {
         const observer6 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square6');
+
+                if (!square.classList) {
+                    return;
+                }
           
                 if (entry.isIntersecting) {
                     square.classList.add('square-animation');
@@ -111,6 +135,10 @@ function Skills() {
         const observer7 = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const square = entry.target.querySelector('.square7');
+
+                if (!square.classList) {
+                    return;
+                }
           
                 if (entry.isIntersecting) {
                     square.classList.add('square-animation');
