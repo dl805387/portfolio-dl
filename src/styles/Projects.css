@@ -150,6 +150,37 @@ make it smaller
 }
 
 
+
+
+
+/*for large screen*/
+@media (min-width: 2600px) 
+{
+    .project {
+        width: 50%;
+    }
+}
+
+@media (min-width: 2200px) 
+{
+    .project {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1800px) 
+{
+    .project {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+/*for small screen*/
 @media (max-width: 1400px) 
 {
     .project {
@@ -282,21 +313,48 @@ make it smaller
 
 }
 
-/*
+
+
+/*for mobile screen*/
 @media (max-width: 500px) 
 {
-    .project {
-        width: 90%;
+    .c1 {
+        width: 100% !important;
+        height: auto !important;
     }
-    .projDesc {
-        background-color: tomato;
+    
+    .ci1 { 
+        width: 100% !important;
+        height: auto !important;  
+    }
+    
+    .c2 {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .ci2 { 
+        width: 100% !important;
+        height: auto !important;  
+    }
+    
+    .c3 {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .ci3 { 
+        width: 100% !important;
+        height: auto !important;  
+    }
+    
+    .c4 {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .ci4 { 
+        width: 100% !important;
+        height: auto !important;  
     }
 }
-*/
-
-/*
-to do
-mobile friendly for screen size 500 and less
-try to use percentages instead of fixed size to prevent micromanaging
-
-*/
