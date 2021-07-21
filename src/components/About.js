@@ -17,7 +17,7 @@ function About() {
                 </p>
                 <a href="#contacts">contact</a>
             </div>
-            <a href="#skillsSection"><FontAwesomeIcon icon="angle-double-down" size="2x" className="icon downArrow"/></a>
+            <a href="#skillsSection"><FontAwesomeIcon icon="angle-double-down" size="2x" className="downArrow"/></a>
         </div>
     );
 }

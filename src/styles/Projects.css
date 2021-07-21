@@ -17,6 +17,7 @@
     width: 512px !important;
     height: 288px !important;
     margin-left: auto;
+    margin-right: 30px;
 }
 
 .ci1 { 
@@ -29,6 +30,7 @@
     width: 460px !important;
     height: 288px !important;
     margin-left: auto;
+    margin-right: 30px;
 }
 
 .ci2 { 
@@ -41,6 +43,7 @@
     width: 400px !important;
     height: 288px !important;
     margin-left: auto;
+    margin-right: 30px;
 }
 
 .ci3 { 
@@ -53,6 +56,7 @@
     width: 460px !important;
     height: 288px !important;
     margin-left: auto;
+    margin-right: 30px;
 }
 
 .ci4 { 
@@ -125,8 +129,6 @@ ul {
 /*
 to do
 
-add tooltip
-maybe make the hover icon change color
 
 
 change width of .project for large screen
@@ -145,4 +147,142 @@ make it smaller
 /*remove underline on the tooltip*/
 #tooltip *:hover {
     text-decoration: none !important;
+}
+
+
+@media (max-width: 1400px) 
+{
+    .project {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1300px) 
+{
+    .project {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) 
+{
+    .project {
+        width: 95%;
+    }
+
+}
+
+/*carousel will be 10% smaller*/
+@media (max-width: 1150px) 
+{
+    /*carousel 1*/
+    .c1 {
+        width: 460px !important;
+        height: 259px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci1 { 
+        width: 460px !important;
+        height: 259px !important;  
+    }
+    
+    /*carousel 2*/
+    .c2 {
+        width: 414px !important;
+        height: 259px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci2 { 
+        width: 414px !important;
+        height: 259px !important;  
+    }
+    
+    /*carousel 3*/
+    .c3 {
+        width: 360px !important;
+        height: 259px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci3 { 
+        width: 360px !important;
+        height: 259px !important;  
+    }
+    
+    /*carousel 4*/
+    .c4 {
+        width: 414px !important;
+        height: 259px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci4 { 
+        width: 414px !important;
+        height: 259px !important;  
+    }
+}
+
+@media (max-width: 1000px) 
+{
+    .projDesc {
+        width: 60%;
+    }
+
+    /*carousel 1*/
+    .c1 {
+        width: 414px !important;
+        height: 233px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci1 { 
+        width: 414 !important;
+        height: 233px !important;  
+    }
+    
+    /*carousel 2*/
+    .c2 {
+        width: 372px !important;
+        height: 233px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci2 { 
+        width: 372px !important;
+        height: 233px !important;  
+    }
+    
+    /*carousel 3*/
+    .c3 {
+        width: 324px !important;
+        height: 233px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci3 { 
+        width: 324px !important;
+        height: 233px !important;  
+    }
+    
+    /*carousel 4*/
+    .c4 {
+        width: 372px !important;
+        height: 233px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    
+    .ci4 { 
+        width: 372px !important;
+        height: 233px !important;  
+    }
 }
