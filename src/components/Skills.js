@@ -13,142 +13,34 @@ import mysql_icon from "../pictures/mysql_icon.png"
 
 function Skills() {
 
+    // if element comes into view, then a class will be added for animation
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const square = entry.target.querySelector('.square');
+
+            if (!square.classList) {
+                return;
+            }
+      
+            if (entry.isIntersecting) {
+                square.classList.add('square-animation');
+                return;
+            }
+
+            square.classList.remove('square-animation');
+        });
+    });
+
     useEffect(() => {
-        // error handling just in case document.queryselector is undefined
-        if (!document.querySelector('.square-wrapper1') ||
-            !document.querySelector('.square-wrapper2') ||
-            !document.querySelector('.square-wrapper3') ||
-            !document.querySelector('.square-wrapper4') ||
-            !document.querySelector('.square-wrapper5') ||
-            !document.querySelector('.square-wrapper6') ||
-            !document.querySelector('.square-wrapper7')) {
+        const boxElList = document.querySelectorAll('.square-wrapper');
+        // if document.queryselector is not undefined, then the observer will listen to each element
+        if (!boxElList) {
             return;
+        } else {
+            boxElList.forEach((el) => {
+                observer.observe(el);
+            });
         }
-        const observer1 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.square1');
-
-                if (!square.classList) {
-                    return;
-                }
-          
-                if (entry.isIntersecting) {
-                    square.classList.add('square-animation');
-                    return;
-                }
-
-                square.classList.remove('square-animation');
-            });
-        });
-        observer1.observe(document.querySelector('.square-wrapper1'));
-
-        const observer2 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.square2');
-
-                if (!square.classList) {
-                    return;
-                }
-          
-                if (entry.isIntersecting) {
-                    square.classList.add('square-animation');
-                    return;
-                }
-
-                square.classList.remove('square-animation');
-            });
-        });
-        observer2.observe(document.querySelector('.square-wrapper2'));
-
-        const observer3 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.square3');
-
-                if (!square.classList) {
-                    return;
-                }
-          
-                if (entry.isIntersecting) {
-                    square.classList.add('square-animation');
-                    return;
-                }
-
-                square.classList.remove('square-animation');
-            });
-        });
-        observer3.observe(document.querySelector('.square-wrapper3'));
-
-        const observer4 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.square4');
-
-                if (!square.classList) {
-                    return;
-                }
-          
-                if (entry.isIntersecting) {
-                    square.classList.add('square-animation');
-                    return;
-                }
-
-                square.classList.remove('square-animation');
-            });
-        });
-        observer4.observe(document.querySelector('.square-wrapper4'));
-
-        const observer5 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.square5');
-
-                if (!square.classList) {
-                    return;
-                }
-          
-                if (entry.isIntersecting) {
-                    square.classList.add('square-animation');
-                    return;
-                }
-
-                square.classList.remove('square-animation');
-            });
-        });
-        observer5.observe(document.querySelector('.square-wrapper5'));
-
-        const observer6 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.square6');
-
-                if (!square.classList) {
-                    return;
-                }
-          
-                if (entry.isIntersecting) {
-                    square.classList.add('square-animation');
-                    return;
-                }
-
-                square.classList.remove('square-animation');
-            });
-        });
-        observer6.observe(document.querySelector('.square-wrapper6'));
-
-        const observer7 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square = entry.target.querySelector('.square7');
-
-                if (!square.classList) {
-                    return;
-                }
-          
-                if (entry.isIntersecting) {
-                    square.classList.add('square-animation');
-                    return;
-                }
-
-                square.classList.remove('square-animation');
-            });
-        });
-        observer7.observe(document.querySelector('.square-wrapper7'));
     }, []);
 
     return (
@@ -156,8 +48,8 @@ function Skills() {
             <p className="sectionHeading">Technical skills I have experience with:</p>
 
             <div className="skillsList">
-                <div className="square-wrapper1">   
-                    <Card className="square1 skillCard">
+                <div className="square-wrapper">   
+                    <Card className="square skillCard">
                         <Card.Img variant="top" src={js_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem className="skillName">JavaScript</ListGroupItem>
@@ -165,8 +57,8 @@ function Skills() {
                     </Card>
                 </div>
 
-                <div className="square-wrapper2">   
-                    <Card className="square2 skillCard">
+                <div className="square-wrapper">   
+                    <Card className="square skillCard">
                         <Card.Img variant="top" src={html_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">HTML</ListGroupItem>
@@ -174,8 +66,8 @@ function Skills() {
                     </Card>
                 </div>
 
-                <div className="square-wrapper3">   
-                    <Card className="square3 skillCard">
+                <div className="square-wrapper">   
+                    <Card className="square skillCard">
                         <Card.Img variant="top" src={css_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">CSS</ListGroupItem>
@@ -183,8 +75,8 @@ function Skills() {
                     </Card>
                 </div>
 
-                <div className="square-wrapper4">   
-                    <Card className="square4 skillCard">
+                <div className="square-wrapper">   
+                    <Card className="square skillCard">
                         <Card.Img variant="top" src={react_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">ReactJS</ListGroupItem>
@@ -192,8 +84,8 @@ function Skills() {
                     </Card>
                 </div>
 
-                <div className="square-wrapper5">   
-                    <Card className="square5 skillCard">
+                <div className="square-wrapper">   
+                    <Card className="square skillCard">
                         <Card.Img variant="top" src={java_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">Java</ListGroupItem>
@@ -201,8 +93,8 @@ function Skills() {
                     </Card>
                 </div>
 
-                <div className="square-wrapper6">   
-                    <Card className="square6 skillCard">
+                <div className="square-wrapper">   
+                    <Card className="square skillCard">
                         <Card.Img variant="top" src={python_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">Python</ListGroupItem>
@@ -210,8 +102,8 @@ function Skills() {
                     </Card>
                 </div>
 
-                <div className="square-wrapper7">   
-                    <Card className="square7 skillCard">
+                <div className="square-wrapper">   
+                    <Card className="square skillCard">
                         <Card.Img variant="top" src={mysql_icon} />
                         <ListGroup className="list-group-flush">
                             <ListGroupItem  className="skillName">MySQL</ListGroupItem>
