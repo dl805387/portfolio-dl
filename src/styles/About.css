@@ -13,13 +13,14 @@
 
 .aboutBody {
     display: flex;
-    width: 50%;
+    width: 600px;
     margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9;
+    background-color: rgb(179, 92, 92);
 }
 
 .aboutBody p {
@@ -37,4 +38,21 @@
 
 .downArrow:hover {
     transform: scale(1.1);
+}
+
+
+@media (max-width: 700px) 
+{
+    .aboutBody {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    .aboutBody {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
 }

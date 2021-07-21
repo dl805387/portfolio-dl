@@ -42,11 +42,6 @@
 }
 
 
-/*
-to make mobile friendly, make the card smaller and add to new line
-you can do this by centering it and flex wrap
-*/
-
 @media (max-width: 1350px) 
 {
     .skillsList {
