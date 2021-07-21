@@ -15,6 +15,7 @@ function About() {
                     Historically the officers of the British Army were drawn from the gentry and upper middle classes. The First 
                     World War required a rapid expansion of the officer corps and more than 200,000 additional officers were 
                 </p>
+                <a href="#contacts">contact</a>
             </div>
             <a href="#skillsSection"><FontAwesomeIcon icon="angle-double-down" size="2x" className="icon downArrow"/></a>
         </div>

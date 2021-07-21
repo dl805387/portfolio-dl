@@ -34,3 +34,7 @@
     bottom: 10px;
     color: coral !important;
 }
+
+.downArrow:hover {
+    transform: scale(1.1);
+}
