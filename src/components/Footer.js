@@ -19,9 +19,9 @@ function Footer() {
                 <a href="https://github.com/dl805387" target="_blank"><FontAwesomeIcon icon="file-alt" size="2x" className="iconWhite"/></a>
                 <a href="https://github.com/dl805387" target="_blank"><p>Resume</p></a>
             </div>
-            <div className="iconPlusLabel">
-                <a href="https://github.com/dl805387" target="_blank"><FontAwesomeIcon icon="envelope" size="2x" className="iconWhite"/></a>
-                <a href="https://github.com/dl805387" target="_blank"><p>Email</p></a>
+            <div className="iconPlusLabel" onClick={(e)=>{e.preventDefault(); window.open('mailto:danny805387@gmail.com');}}>
+                <FontAwesomeIcon icon="envelope" size="2x" className="iconWhite"/>
+                <p>Email</p>
             </div>
         </div>
     );

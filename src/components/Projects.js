@@ -178,7 +178,7 @@ function Projects() {
                     <ul>
                         <li>This program allows the user to encrypt and decrypt passwords/messages</li>
                         <li>Encryption is done using a combination of UTF-8 character encoding and caesar cipher</li>
-                        <li>Pandas is used to read the encryption key csv file and UTF-8 character-byte mapping</li>
+                        <li>Pandas is used to read the encryption key csv file and for UTF-8 character-byte mapping</li>
                         <li>GUI is built using the Tkinter library</li>
                     </ul>
                     <div className="iconsRow">

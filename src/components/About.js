@@ -82,7 +82,7 @@ function About() {
                             delay={{ show: 250, hide: 400 }}
                             overlay={renderTooltipEMail}
                         >
-                            <a href="https://github.com/dl805387/myKdrama" target="_blank"><FontAwesomeIcon icon="envelope" size="2x" className="contactIcon"/></a>
+                            <FontAwesomeIcon icon="envelope" size="2x" className="contactIcon" onClick={(e)=>{e.preventDefault(); window.open('mailto:danny805387@gmail.com');}}/>
                         </OverlayTrigger>
                     </div>
                 </div>
