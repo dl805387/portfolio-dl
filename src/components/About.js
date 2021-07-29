@@ -39,10 +39,12 @@ function About() {
                     <img className="me" src={me} alt="picture of me"></img>
                     <h1>About Me</h1>
                 </div>
-                <p>"Temporary gentlemen" is a colloquial term referring to male officers of the British Army who held temporary
-                    (or war-duration) commissions, particularly when such men came from outside the traditional officer class. 
-                    Historically the officers of the British Army were drawn from the gentry and upper middle classes. The First 
-                    World War required a rapid expansion of the officer corps and more than 200,000 additional officers were 
+                <p>
+                    Hi, My name is Danny Lin. I am a third year computer science student at UNC Chapel Hill. 
+                    My hobbies are watching variety shows, listening to podcasts, watching tv-shows, and going to the gym.
+                    I have experience programming in Java, Javascript, and Python.
+                    I have experience with working on programming projects including web development and using databases.
+                    Check out my projects!
                 </p>
 
                 <div className="contactRow">
