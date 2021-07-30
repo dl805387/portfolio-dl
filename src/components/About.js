@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/About.css'
 import me from '../pictures/me.png'
+import resume from '../pictures/resume_2021.pdf'
 import './Icons.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -40,10 +41,10 @@ function About() {
                     <h1>About Me</h1>
                 </div>
                 <p>
-                    Hi, My name is Danny Lin. I am a third year computer science student at UNC Chapel Hill. 
+                    Hi, I'm Danny Lin. I am a computer science student at UNC Chapel Hill. 
                     My hobbies are watching variety shows, listening to podcasts, watching tv-shows, and going to the gym.
                     I have experience programming in Java, Javascript, and Python.
-                    I have experience with working on programming projects including web development and using databases.
+                    I also have experience with working on programming projects including web development, software development, using APIs and databases.
                     Check out my projects!
                 </p>
 
@@ -54,7 +55,7 @@ function About() {
                             delay={{ show: 250, hide: 400 }}
                             overlay={renderTooltipGit}
                         >
-                            <a href="https://github.com/dl805387/myKdrama" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="contactIcon"/></a>
+                            <a href="https://github.com/dl805387" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="2x" className="contactIcon"/></a>
                         </OverlayTrigger>
                     </div>
 
@@ -64,7 +65,7 @@ function About() {
                             delay={{ show: 250, hide: 400 }}
                             overlay={renderTooltipLinkedIn}
                         >
-                            <a href="https://www.linkedin.com/in/danny-lin-7a2094197/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" className="contactIcon"/></a>
+                            <a href="https://www.linkedin.com/in/danny805/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" className="contactIcon"/></a>
                         </OverlayTrigger>
                     </div>
 
@@ -74,7 +75,7 @@ function About() {
                             delay={{ show: 250, hide: 400 }}
                             overlay={renderTooltipResume}
                         >
-                            <a href="https://github.com/dl805387/myKdrama" target="_blank"><FontAwesomeIcon icon="file-alt" size="2x" className="contactIcon"/></a>
+                            <a href={resume} target="_blank"><FontAwesomeIcon icon="file-alt" size="2x" className="contactIcon"/></a>
                         </OverlayTrigger>
                     </div>
 

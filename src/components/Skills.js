@@ -45,7 +45,7 @@ function Skills() {
 
     return (
         <div id="skillsSection">
-            <p className="sectionHeading">My Technical Skills</p>
+            <p className="sectionHeading">My Technical Skills:</p>
 
             <div className="skillsList">
                 <div className="square-wrapper">   
