@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/Footer.css'
 import './Icons.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import resume from '../pictures/resume_2021.pdf'
+import resume from '../pictures/dannylin_resume2021.pdf'
 
 function Footer() {
 

@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/About.css'
 import me from '../pictures/me.png'
-import resume from '../pictures/resume_2021.pdf'
+import resume from '../pictures/dannylin_resume2021.pdf'
 import './Icons.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Tooltip from 'react-bootstrap/Tooltip';
